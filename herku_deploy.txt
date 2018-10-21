@@ -1,0 +1,8 @@
+1 Open account in heroku
+2 Change in gemfile for production
+3 bundle install --without production
+4 commit to git
+5 Heroku login
+6 heroku keys:add #this will our editor ssh to heroku
+7 git push heroku master #note that rails 4.2.5 was creating problem so I updated to 4.2.8
+8 heroku rename alpha-blog-newaz #to rename hostname
