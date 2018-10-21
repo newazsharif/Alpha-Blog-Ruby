@@ -48,7 +48,7 @@ end
 
 group :production do
    # Use postgrace as the database for Active Record
-  gem 'pg'
+  gem 'pg', '~> 0.20'
   #need only for earlier version of rails 5
   gem 'rails_12factor'
 end
