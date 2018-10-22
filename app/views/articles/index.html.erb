@@ -21,6 +21,7 @@
       </td>
       <td><%= link_to "edit",edit_article_path(article.id) %></td>
       <td><%= link_to "show" ,article_path(article.id)%></td>
+      <td><%= link_to "delete" ,article_path(article.id) , method: :delete , data: {confirm: "are you sure?"}%></td>
     </tr>
     <% end %>
   </tbody>

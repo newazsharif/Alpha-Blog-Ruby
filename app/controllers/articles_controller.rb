@@ -13,6 +13,12 @@ class ArticlesController < ApplicationController
   end
   
   
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy();
+    flash[:notice] = "Article deleted successfully!!"
+    redirect_to articles_path
+  end
   
   def create
     
