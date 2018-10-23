@@ -6,3 +6,4 @@
 6 heroku keys:add #this will our editor ssh to heroku
 7 git push heroku master #note that rails 4.2.5 was creating problem so I updated to 4.2.8
 8 heroku rename alpha-blog-newaz #to rename hostname
+9 heroku run rake db:migrate #magrate to heroku
