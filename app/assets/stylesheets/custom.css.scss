@@ -1,0 +1,26 @@
+$navbar-default-bg: black;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo{
+  float : left;
+  font-size : 1.7em;
+  text-transform : uppercase;
+  font-weight : bold;
+  
+}
+
+.center{
+  text-align : center;
+}
+.jumbotron{
+  background-image : url('https://goldbondultimate.com/wp-content/uploads/2017/06/new-jumbotron-background.png');
+  color : white;
+  height : 300px;
+}
+.footer{
+  background-image : url("https://backgroundcheckall.com/wp-content/uploads/2017/12/jumbotron-background-image.gif");
+  text-align : center;
+  margin-top : 15px;
+}
