@@ -1,21 +1,21 @@
-<div class = "panel panel-info">
-<div class = "panel-heading">Show Article Information</div>
-  <div class = "panel-body">
-    <div class = "col-md-2">
-      Title : 
+<article>
+  <h2>
+    <%= @article.title %>
+  </h2>
+  <div class = "well ">
+      <%= @article.description %>
     </div>
-    <div class = "col-md-10">
-      <%= @article.title%>
-    </div>
-    
-    <div class = "col-md-2">
-      Description :
-    </div>
-    
-    <div class = "col-md-10">
-      <%= @article.description%>
-    </div>
-    <div class = "row"><center>[<%= link_to "Article List", articles_path %>]</center></div>
-    <div class = "row"><center>[<%= link_to  "Edit Article", edit_article_path(@article.id) %>]</center></div>
-  </div>
+</article>
+<hr>
+<div class = "row action-style">
+  
+      
+    <strong><%= link_to "Article List", articles_path,class: "btn btn-info btn-xs" %><strong>
+      
+  
+  
+    <strong><%= link_to  "Edit Article", edit_article_path(@article.id),class: "btn btn-success btn-xs" %></strong>
+    <strong><%= link_to "Delete" ,article_path(@article.id) ,class: "btn btn-danger btn-xs", method: :delete , data: {confirm: "are you sure?"}%></strong>
+  
 </div>
+
