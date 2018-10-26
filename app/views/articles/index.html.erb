@@ -15,7 +15,7 @@
         <%= article.description %>
       </div>
       <div class = "action-style">
-       
+        <%= link_to  "Read More..", show=article_path(article.id),class: "btn btn-info btn-xs" %>
         <%= link_to  "Edit Article", edit_article_path(article.id),class: "btn btn-success btn-xs" %>
         <%= link_to "Delete" ,article_path(article.id) ,class: "btn btn-danger btn-xs", method: :delete , data: {confirm: "are you sure?"}%>
       </div>
