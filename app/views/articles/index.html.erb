@@ -11,9 +11,11 @@
       <div class = "article-title">
         <%= article.title %>
       </div>
+      <hr>
       <div class = "article-body">
         <%= article.description %>
       </div>
+      <hr>
       <div class = "action-style">
         <%= link_to  "Read More..", show=article_path(article.id),class: "btn btn-info btn-xs" %>
         <%= link_to  "Edit Article", edit_article_path(article.id),class: "btn btn-success btn-xs" %>
