@@ -1,8 +1,9 @@
 
 ---------------scaffolding starts-------------------
 
-1 rails generate scaffold table_name cloumn1:type column2:type    #generate migration file with table information
+1 rails generate scaffold ModelName cloumn1:type column2:type    #generate migration file with table information
 2 rake db:migrate   #execute the migration
+3 rails destroy scaffold ModelName #destroy migration
 
 
 ---------------scaffolding end-------------------
