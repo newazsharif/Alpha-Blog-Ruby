@@ -1,0 +1,13 @@
+
+  <h3 class = "center">Wellcome <%= @user.username %></h3>
+  <div class = "row">
+    <div class = "co-md-4 center">
+      <ul class = "listing">
+        <li class = "article-title"><%= gravatar_for @user,150 %></li>
+        <li><small><strong><%= @user.username %> have <%= pluralize(@user.articles.count, "article") if @user.articles%></strong></small></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+  <%= render '/articles/articles' , obj: @user.articles %>
