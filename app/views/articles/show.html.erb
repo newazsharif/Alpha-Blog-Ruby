@@ -18,23 +18,13 @@
         <%= @article.description %>
       
     </article>
-
-
-
-
-
-
   <hr>
   <div class = "row action-style">
-    
-        
       <strong><%= link_to "Article List", articles_path,class: "btn btn-info btn-xs" %><strong>
-        
-    
-    
-      <strong><%= link_to  "Edit Article", edit_article_path(@article.id),class: "btn btn-success btn-xs" %></strong>
-      <strong><%= link_to "Delete" ,article_path(@article.id) ,class: "btn btn-danger btn-xs", method: :delete , data: {confirm: "are you sure?"}%></strong>
-    
+      <% if logged_in? && @article.user == current_user %>
+        <strong><%= link_to  "Edit Article", edit_article_path(@article.id),class: "btn btn-success btn-xs" %></strong>
+        <strong><%= link_to "Delete" ,article_path(@article.id) ,class: "btn btn-danger btn-xs", method: :delete , data: {confirm: "are you sure?"}%></strong>
+      <% end %>
   </div>
 </div>
 
