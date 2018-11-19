@@ -1,0 +1,19 @@
+rake aborted!
+Don't know how to build task ':db' (see --tasks)
+/app/vendor/bundle/ruby/2.4.0/gems/rake-12.3.1/exe/rake:27:in `<top (required)>'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/cli/exec.rb:74:in `load'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/cli/exec.rb:74:in `kernel_load'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/cli/exec.rb:27:in `run'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/cli.rb:360:in `exec'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor.rb:369:in `dispatch'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/cli.rb:20:in `dispatch'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor/base.rb:444:in `start'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/cli.rb:10:in `start'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/exe/bundle:30:in `block in <top (required)>'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/lib/bundler/friendly_errors.rb:121:in `with_friendly_errors'
+/app/vendor/bundle/ruby/2.4.0/gems/bundler-1.15.2/exe/bundle:22:in `<top (required)>'
+/app/bin/bundle:3:in `load'
+/app/bin/bundle:3:in `<main>'
+(See full trace by running task with --trace)
