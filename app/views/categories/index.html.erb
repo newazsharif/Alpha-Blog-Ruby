@@ -1,5 +1,6 @@
 <h2 align = "center">Categories List</h2>
 <div align = "center">
+  <%= will_paginate %>
   <div class = "row">
     <ul class = "listing">
      <% @categories.each do |category| %>
@@ -8,7 +9,10 @@
           <%= link_to category.name , category_path(category) %>
         </li>
       </div>
+      <% end %>
     </ul>
-   <% end %>
+   
+   
   </div>
+  <%= will_paginate %>
 </div>
