@@ -16,7 +16,9 @@
     
     <article>
         <%= @article.description %>
-      
+        <% if @article.categories.any? %>
+          <p>Categories : <%= render @article.categories %> </p>
+        <% end %>
     </article>
   <hr>
   <div class = "row action-style">

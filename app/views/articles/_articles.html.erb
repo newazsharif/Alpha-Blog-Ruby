@@ -17,6 +17,9 @@
       <hr>
       <div class = "action-style">
         <%= link_to  "Read More..", show=article_path(article.id),class: "btn btn-info btn-xs" %>
+        <%if article.categories.any? %>
+         <p>Categories <%= render article.categories %></p>
+        <%end%>
         <% if logged_in? && (article.user == current_user || current_user.admin?) %>
           <%= link_to  "Edit Article", edit_article_path(article.id),class: "btn btn-success btn-xs" %>
           <%= link_to "Delete" ,article_path(article.id) ,class: "btn btn-danger btn-xs", method: :delete , data: {confirm: "are you sure?"}%>
